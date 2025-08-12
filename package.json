@@ -1,0 +1,33 @@
+{
+  "name": "frau-detection",
+  "version": "1.0.0",
+  "main": "index.js",
+  "scripts": {
+    "start": "node src/app.js",
+    "dev": "nodemon src/app.js",
+    "test": "jest",
+    "docker:up": "docker-compose up -d",
+    "docker:down": "docker-compose down",
+    "docker:logs": "docker-compose logs -f",
+    "docker:rebuild": "docker-compose down && docker-compose up --build -d"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "description": "",
+  "dependencies": {
+    "dotenv": "^17.2.1",
+    "express": "^5.1.0",
+    "express-validator": "^7.2.1",
+    "kafkajs": "^2.2.4",
+    "node-cache": "^5.1.2",
+    "prom-client": "^15.1.3",
+    "sqlite3": "^5.1.7",
+    "winston": "^3.17.0"
+  },
+  "devDependencies": {
+    "jest": "^30.0.5",
+    "nodemon": "^3.1.10",
+    "supertest": "^7.1.4"
+  }
+}
