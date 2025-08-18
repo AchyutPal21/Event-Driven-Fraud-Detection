@@ -21,22 +21,13 @@ async function sendTransaction(transaction) {
 // Example transactions (including fraud cases)
 const transactions = [
   // Fraud: High amount + non-USA location
-  { transactionId: 'txn_f1', userId: 'user_1', amount: 6000, location: 'Nigeria', timestamp: new Date().toISOString() },
+  { transactionId: 'txn_f110', userId: 'user_100', amount: 6000, location: 'Nigeria', timestamp: new Date().toISOString() },
   
   // Fraud: Round number amount
-  { transactionId: 'txn_f2', userId: 'user_2', amount: 1000, location: 'USA', timestamp: new Date().toISOString() },
-  { transactionId: 'txn_f3', userId: 'user_2', amount: 2000, location: 'USA', timestamp: new Date().toISOString() },
-  { transactionId: 'txn_f4', userId: 'user_2', amount: 4000, location: 'USA', timestamp: new Date().toISOString() },
-  { transactionId: 'txn_f5', userId: 'user_2', amount: 5000, location: 'USA', timestamp: new Date().toISOString() },
-  { transactionId: 'txn_f6', userId: 'user_2', amount: 5000, location: 'USA', timestamp: new Date().toISOString() },
-  { transactionId: 'txn_f7', userId: 'user_2', amount: 5000, location: 'USA', timestamp: new Date().toISOString() },
-  { transactionId: 'txn_f8', userId: 'user_2', amount: 5000, location: 'USA', timestamp: new Date().toISOString() },
-  { transactionId: 'txn_f9', userId: 'user_2', amount: 5000, location: 'USA', timestamp: new Date().toISOString() },
-  { transactionId: 'txn_f10', userId: 'user_2', amount: 5000, location: 'USA', timestamp: new Date().toISOString() },
-  { transactionId: 'txn_f11', userId: 'user_2', amount: 5000, location: 'USA', timestamp: new Date().toISOString() },
-  
+  { transactionId: 'txn_f210', userId: 'user_200', amount: 1000, location: 'USA', timestamp: new Date().toISOString() },
+
   // Normal transaction
-  { transactionId: 'txn_n12', userId: 'user_3', amount: 1234, location: 'USA', timestamp: new Date().toISOString() }
+  { transactionId: 'txn_n120', userId: 'user_300', amount: 1234, location: 'USA', timestamp: new Date().toISOString() }
 ];
 
 // Send all transactions
